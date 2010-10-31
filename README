@@ -1,0 +1,46 @@
+ASSS - Arnold Schmürz Sound System
+
+Organize your sound files in directories and sub-directories, and then launch them by clicking on a button !
+
+
+-- Installation --
+The ASSS is aimed to be run on a Linux/GTK environment. It uses Mplayer as a backend for playing the files.
+
+You need the following dependencies :
+* mplayer
+* python
+* python-gtk2
+* aumix (for the volume control)
+
+On Ubuntu/Debian environment, simply run:
+sudo apt-get install mplayer aumix python python-gtk2
+
+You can launch the ASSS by running the asss.sh script (./asss.sh from the command line, or double clicking the file). 
+If it does nothing, make it executable (chmod +x asss.sh).
+
+
+--- How to use the ASSS --
+
+In the folder containing the script, create a folder named 'sounds' (the name of that folder is hardcoded).
+
+In that folder, create folders for the main sound categories, and subfolders for sub-categories (all sound files need to be in subcategories).
+
+Each folder corresponds to a tab in the interface, and each subfolder to a column. 
+
+The ASSS will read pretty much anything (all that mplayer can play), which includes videos (that will open a window containing the video).
+
+A click on a button launches a sound, another click stops it. You can launch as many sounds as you wish simultaneously.
+
+There is an 8 band equalizer (and a reinitializing button), which has to be set before a sound is launched.
+
+The volume control is active while playing sounds.
+
+You can skip intros (useful for songs). You can either change the filename. Adding #25 at the end of the filename (before the extension) will skip the first 2.5 seconds. You can also specify an amount to skip in the lower right corner of the interface (the checkbox enables or disables the override).
+
+
+
+
+Have fun !
+
+
+Released under the MIT license
